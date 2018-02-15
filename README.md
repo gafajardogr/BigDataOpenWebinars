@@ -1,4 +1,4 @@
-# Curso Big Data OpenWebinars
+# Curso Big Data OpenWebinars
 
 > Big data o datos a gran escala es un concepto que hace referencia a un conjuntos de datos tan grandes que aplicaciones informáticas tradicionales de procesamiento de datos no son suficientes para tratar con ellos
 > 
@@ -11,14 +11,14 @@ Otra definición:
 > 
 > Viktor Mayer
 
-## Las 4 V's
+## Las 4 V's
 
 * Volumen
 * Velocidad: Con la que se producen los datos y con la que se genera información para los que están esperando
 * Variedad: Datos estructurados, no estructurados, imágenes, ...
 * Valor: Convertir (la gran cantidad de) datos en información útil
 
-## Características comunes de los sistemas Big Data
+## Características comunes de los sistemas Big Data
 
 * Procesamiento distribuido
 * Escabilidad horizontal
@@ -27,29 +27,29 @@ Otra definición:
 * Hardware económico
 Estas características son básicas y necesarias en todo sistema, puesto que la unión de estas características es lo que nos hace poder tratar una gran cantidad de datos en un tiempo digno y con una probabilidad baja de fallo.
 
-## Funcionamiento de los Sistemas Big Data
+## Funcionamiento de los Sistemas Big Data
 
 * Ingesta de los datos
 * Almacenamiento de los datos
 * Procesamiento de los datos
 * Visualización
 
-## Casos de uso
+## Casos de uso
 
 * Procesamiento de logs
 * Sistemas de recomendación
 * Salud: Procesamiento de análisis clínicos, ADN, hábitos alimenticios, ...
 * Financiero: Análisis de datos financieros para la recomendación en inversiones.
 
-## Big data en cifras (2017)
+## Big data en cifras (2017)
 
 ![](images/InfografiaBigData.png)
 
-## Big data framework
+## Big data framework
  
 ![](images/BigDataFramework.png)
 
-## Hadoop
+## Hadoop
 
 Framework open source para procesamiento distribuido
 
@@ -57,14 +57,14 @@ Framework open source para procesamiento distribuido
 * Tolerante a fallos
 * Trabaja en disco
 
-## Módulos Hadoop
+## Módulos Hadoop
 
 * Common utilities: Scripts, ... (core) para que el resto funcione
 * YARN *(Yet Another Resource Negociator)*. Gestiona recursos, repartiendo memoria, asignando recursos, ...
 * HDFS: Sistema de archivos distribuido (ofrece replicación de datos, cercanía de datos, ...)
 * MapReduce: Map agrupando, creando pequeños saquitos que luego son pasados al proceso Reduce. 
 
-## Cluster Hadoop 
+## Cluster Hadoop 
 
 * 1 máquina maestra (head node)
 * 1 máquina maestra secundaria opcional
@@ -84,11 +84,11 @@ Framework open source para procesamiento distribuido
 * El navegador de la MV tiene un enlace a Cloudera-Manager
 * Los componentes Hadoop son roles en Cloudera-Manager. Deberían ir a los worker node, y dejar el nodo master para la coordinación.
 
-### Apache Hue
+### Apache Hue
 
 * Interactúa con procesos map-reduce y HDFS para la gestión de archivos. * Usar la demno de Apache Hue en Cloudera (http://demo.gethue.com/)
 
-### Apache Spark
+### Apache Spark
 
 * Sistema de computación de datos sobre Hadoop
 * Trabaja en memoria. 100 veces más rápido que Hadoop
@@ -105,7 +105,7 @@ ___
 > Accederemos a Apache Spark a través de la MV de Cloudera
 ___
 
-## Apache Flink
+## Apache Flink
 
 * Framework para procesamiento distribuido de flujos de datos. 
 * También sirve para procesamiento por lotes
@@ -124,7 +124,7 @@ ____
 > Seguir el QuickStart de Apache Flink
 ____
 
-## Apache Storm
+## Apache Storm
 
 * Framework para procesamiento distribuido de datos **en streaming**
 * Tolerante a fallos (el resto de máquinas hace el trabajo de la máquina que cae)
@@ -132,18 +132,18 @@ ____
 * Pensado para tratamiento de datos en tiempo real (sensores, tweets, ...=
 * Storm utiliza un grafo dirigido en el que los trabajos van pasando de una etapa a otra
 
-### Componentes de Apache Storm
+### Componentes de Apache Storm
 
 ![](images/ApacheStorm.png)
 
 * Spout (Grifo): Recoge el flujo de datos en tiempo real
 * Bolt (Rayo): Procesamiento y transformación de datos
 
-### Arquitectura de Apache Storm
+### Arquitectura de Apache Storm
 
 ![](images/ArquitecturaApacheStorm.png)
 
-### Ejemplo de Apache Storm
+### Ejemplo de Apache Storm
 
 Seguir los pasos de http://storm.apache.org/releases/1.1.1/Setting-up-a-Storm-cluster.html
 
@@ -163,7 +163,7 @@ Cargar la variable de entorno en ~/.profile
     export PATH=$PATH:$JAVA_HOME/bin
 ```
 
-## Apache Samza
+## Apache Samza
 
 * Framework de procesamiento asíncrono de streaming
 * Muy intetgrado con Apache Kafka para la carga de datos
