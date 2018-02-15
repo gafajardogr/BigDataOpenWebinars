@@ -43,7 +43,7 @@ Estas características son básicas y necesarias en todo sistema, puesto que la 
 
 ## Big data en cifras (2017)
 
-![](images/InfografiaBigData.png)
+![](images/infografiaBigData.png)
 
 ## Big data framework
  
