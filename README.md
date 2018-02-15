@@ -43,7 +43,7 @@ Estas características son básicas y necesarias en todo sistema, puesto que la 
 
 ## Big data en cifras (2017)
 
-![](images/InfografiaBigData.tiff)
+![](images/InfografiaBigData.png)
 
 ## Big data framework
  
@@ -69,8 +69,8 @@ Framework open source para procesamiento distribuido
 * 1 máquina maestra (head node)
 * 1 máquina maestra secundaria opcional
 * N máquinas esclava (worker node)
-
-![](images/HadoopEcosystem.tiff)
+.png
+![](images/HadoopEcosystem.png)
 
 * Oozie permite automatizar mediante scripts tareas rutinarias y programables en el tiempo (carga datos, distribuye a tal lugar, procesa de tal manera, vuelca a tal sitio, ...)
 * Scoop carga y exporta datos entre las fuentes y HDFS
@@ -95,7 +95,7 @@ Framework open source para procesamiento distribuido
 * También permite trabajar en disco si se llena la RAM
 * Ofrece Spark SQL, Spark Streaming para procesamiento en tiempo real, Spark MLib para Machine Learning y Spark Graph (Procesamiento de grafos)
 
-![](images/SparkInstalls.tiff)
+![](images/SparkInstalls.png)
 
 * Stadalone: Descarga una versión compilada y se añade a cada una de los nodos (https://spark.apache.org/docs/latest/spark-standalone.html)
 * Spark en Mesos (Mesos hace el papel de gestor de recursos -YARN) (https://spark.apache.org/docs/latest/running-on-mesos.html)
@@ -113,7 +113,7 @@ ___
 * Tolerante a fallos
 * Buen rendimiento en clusters con gran cantidad de nodos
 
-![](images/FlinkCore.tiff)
+![](images/FlinkCore.png)
 
 * APIs para procesamiendo de datos
 * Librerías para ML (FLINK ML)
@@ -134,14 +134,14 @@ ____
 
 ### Componentes de Apache Storm
 
-![](images/ApacheStorm.tiff)
+![](images/ApacheStorm.png)
 
 * Spout (Grifo): Recoge el flujo de datos en tiempo real
 * Bolt (Rayo): Procesamiento y transformación de datos
 
 ### Arquitectura de Apache Storm
 
-![](images/ArquitecturaApacheStorm.tiff)
+![](images/ArquitecturaApacheStorm.png)
 
 ### Ejemplo de Apache Storm
 
